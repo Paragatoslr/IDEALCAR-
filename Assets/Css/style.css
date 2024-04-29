@@ -1,0 +1,71 @@
+
+
+/* Tagline text */
+.text-box {
+    width: 90%;
+    /* color: #ffffff; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box h1{
+    font-size: 100px;
+}
+
+.text-box p{
+    font-size: 30px;
+}
+
+.monitor-text h1{
+    font-size: 70px;
+}
+
+.monitor-text p{
+    font-size: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 70px;
+    padding: 10px 30px; 
+    font-size: 20px;
+    background-color: rgb(28, 19, 68);
+    cursor: pointer;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .text-box h1 {
+        font-size: 60px; /* Adjust the font size for smaller screens */
+    }
+
+    .text-box p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+    }
+
+    @media (max-width: 576px) {
+    .text-box h1 {
+        font-size: 40px; /* Adjust the font size for even smaller screens */
+    }
+
+    .text-box p {
+        font-size: 16px; /* Adjust the font size for even smaller screens */
+    }
+
+    .nav-link li{
+        position: absolute;
+        background: #ffffff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+    }
+}
