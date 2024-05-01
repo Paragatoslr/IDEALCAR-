@@ -37,10 +37,54 @@
     cursor: pointer;
 }
 
+/*  Monitor all your assets */
+
+.row-monitor{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-position {
+    position: absolute;
+    top: 5%;
+    right: -0%;
+    transform: translate(30%, -5%);
+    z-index: 2; /* Ensure the car is on top of the background image */  
+    animation: slideLeft 4s infinite;
+}
+
+/* This code let the truck slide back and fort */
+@keyframes slideLeft {
+    0% {
+        right: 0%; /* Start from original position */
+    }
+    50% {
+        right: 35%; /* Slide to new position */
+    }
+    100% {
+        right: 0%; /* Back to original position */
+    }
+}
 
 
-/* Responsive styles */
+/* Responsive styles area ! */
 @media (max-width: 768px) {
+
+    /* Nav */
+
+    .nav-link li{
+        position: absolute;
+        background: #ffffff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+    }
+
+    /* Your Key to a Smoother Operation, Track with Us Now - - - - */
+
     .text-box h1 {
         font-size: 60px; /* Adjust the font size for smaller screens */
     }
@@ -53,19 +97,42 @@
     @media (max-width: 576px) {
     .text-box h1 {
         font-size: 40px; /* Adjust the font size for even smaller screens */
+        text-align: center;
     }
 
     .text-box p {
         font-size: 16px; /* Adjust the font size for even smaller screens */
+        text-align: center;
     }
 
-    .nav-link li{
-        position: absolute;
-        background: #ffffff;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0;
-        text-align: left;
+
+    /* Monitor all your assets _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+    .monitor-text h1 {
+        font-size: 60px; /* Adjust the font size for smaller screens */
     }
+
+    .monitor-text p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+    }
+
+    @media (max-width: 576px) {
+    .monitor-text h1 {
+        font-size: 40px; /* Adjust the font size for even smaller screens */
+        text-align: center;
+    }
+
+    .monitor-text p {
+        font-size: 16px; /* Adjust the font size for even smaller screens */
+        text-align: justify;
+    }
+
+    @media (max-width: 767px) {
+        .d-none.d-md-block {
+            display: none !important;
+        }
+    }
+
+    
 }
