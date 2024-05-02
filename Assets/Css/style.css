@@ -1,3 +1,11 @@
+/* color */
+:root {
+    --bg-color: #010F23;
+}
+
+.bg-darkblue {
+    background-color: var(--bg-color);
+}
 
 
 /* Tagline text */
@@ -49,9 +57,28 @@
     position: absolute;
     top: 5%;
     right: -0%;
-    transform: translate(30%, -5%);
+    transform: translate(10%, -5%); /*to adjust the position of the truck*/
     z-index: 2; /* Ensure the car is on top of the background image */  
     animation: slideLeft 4s infinite;
+}
+
+/* .bg{
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%);
+} */
+
+/* Carousel Content */
+.carousel-control-prev, .carousel-control-next {
+    top: 25cap;
+    margin-inline: 10%;
+    background-color: gray;
+    border-radius: 100%;
+    width: 3.5%;
+    height: 10%;
+    text-align: center;
+}
+
+.card{
+    margin-left: 2%;
 }
 
 /* This code let the truck slide back and fort */
@@ -60,7 +87,7 @@
         right: 0%; /* Start from original position */
     }
     50% {
-        right: 35%; /* Slide to new position */
+        right: 0%; /* Slide to new position */
     }
     100% {
         right: 0%; /* Back to original position */
@@ -92,6 +119,10 @@
     .text-box p {
         font-size: 20px; /* Adjust the font size for smaller screens */
     }
+
+    .explore-btn{
+        text-align: center;
+    }
     }
 
     @media (max-width: 576px) {
@@ -102,6 +133,10 @@
 
     .text-box p {
         font-size: 16px; /* Adjust the font size for even smaller screens */
+        text-align: center;
+    }
+
+    .explore-btn{
         text-align: center;
     }
 
