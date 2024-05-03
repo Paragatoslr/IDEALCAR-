@@ -68,17 +68,24 @@
 
 /* Carousel Content */
 .carousel-control-prev, .carousel-control-next {
-    top: 25cap;
-    margin-inline: 10%;
-    background-color: gray;
-    border-radius: 100%;
-    width: 3.5%;
+    top: 30cap;
+    margin-inline: 15%;
+    border-radius: 10px;
+    width: 3%;
     height: 10%;
     text-align: center;
 }
 
+.carousel-control-prev, .carousel-control-next :hover {
+    background: rgb(28, 19, 68);
+}
+
+.carousel-control-next, .carousel-control-prev :hover {
+    background: rgb(28, 19, 68);
+}
+
 .card{
-    margin-left: 2%;
+    margin: .5%;
 }
 
 /* This code let the truck slide back and fort */
@@ -168,6 +175,87 @@
             display: none !important;
         }
     }
+}
 
-    
+/* map area */
+
+.map-container{
+    width: 100%;
+    margin-top: -10cap;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* background:rgb(28, 19, 68); */
+}
+.contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1.5rem; */
+    box-shadow: 0 0 1rem hsla(0 0 0 /16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.form-container{
+    padding: 20px;
+    background: rgb(28, 19, 68);
+
+}
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-container input,
+.contact-container textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgb(37, 31, 78);
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.4rem;
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background: #00bdbe;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.send-button :hover{
+    background: hsla(181, 100%, 10%, 0.8);
+    transition: 0.3s all linear;
+}
+.contact-container .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 964px){
+    .contact-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media (max-width: 700px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        /* margin-top: 20rem !important; */
+    }
+    .map iframe{
+        height: 400px;
+    }
 }
