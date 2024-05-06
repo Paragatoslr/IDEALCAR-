@@ -31,30 +31,34 @@
     <section class="header">
         <!-- Nav bar -->
             <nav class="navbar navbar-expand-lg ">
-                <div class="container">
-                <a class="navbar-brand" href="#"><img src="Assets/Images/logo1.png" alt="inav-logo"></a>
+                <a class="navbar-brand px-5" href="#"><img src="Assets/Images/logo1.png" alt="inav-logo"></a>
+
+                <!-- <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-white" href="#">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Company</a>
-                    </li>
-                </div>
-                </div>
-            </nav>
+                </div> -->
+
+                <div class="collapse navbar-collapse justify-content-end px-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Company</a>
+                        </li>
+                    </ul>
+                </div> <!-- End of navbar-collapse -->
+
+            </nav> <!-- End of the Navbar-->>
     </section>
-    
+
     <!-- Tagline -->
     <section class="tagline text-white">
         <div class="text-box container-fluid ">
@@ -80,8 +84,8 @@
         
                 <div class="col-md-5 position-relative d-none d-md-block">
                     <div class="course-col">
-                        <img src="images/fast road bg.png" alt="fast_background" class="bg w-120" style="z-index: 1;">
-                        <img src="images/Car.png" alt="white_truck" class="car-position" style="width: 800px; height: auto;" id="car">
+                        <img src="images/fast road bg.png" alt="fast_background" class="bg w-full md:w-full" style="z-index: 1;">
+                        <img src="images/Car.png" alt="white_truck" class="car-position hidden md:block w-full md:w-120" style="width: 800px; height: auto;" id="car">
                     </div>
                 </div> 
             </div>      
@@ -127,7 +131,7 @@
                 <div class="row-monitor justify-content-between">
                     <div class="col-md-5 position-relative d-none d-md-block">
                         <div class="course-col">
-                            <img src="images/oil.png" alt="fast_background" class="box-image" style="max-width:fit-content; height: auto;">
+                            <img src="images/oil.png" alt="fast_background" class="bg box-image" style="max-width:fit-content; height: auto;">
 
                             <!-- <img src="images/Car.png" alt="white_truck" class="car-position" style="width: 800px; height: auto;" id="car"> -->
                         </div>
@@ -148,7 +152,7 @@
     
         </section>
     </section>
-
+    
     <!-- Manage your drivers -->
 
     <section class="content text-dark">
@@ -189,7 +193,7 @@
                 </div>
             </div>
         </div>
-        <div class="container px-0 py-5">
+        <div class="container">
             <div class="row justify-content-center m-0">
 
                 <div class="card-img mb-3 ml-2" style="width: 20rem;">
@@ -220,7 +224,7 @@
     <!-- email and map -->
     <div class="container p-5">
         <div class="text-center py-5">
-            <div class="monitor-text p-5">
+            <div class="monitor-text ">
                 <h1 class="fw-bold">Contact Us </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit provident vitae expedita quas! Eveniet animi vitae placeat facere necessitatibus inventore voluptatum asperiores illum deleniti, aperiam, veniam culpa id dolorum.</p>
                 <!-- <a href="#" class="explore-btn">Explore</a> -->
@@ -255,15 +259,17 @@
     
     <!-- footer -->
 
-      <footer class="footer mt-auto py-5 bg-dark">
-
-        <div class="container">
-            <div class="container mx-auto text-center">
-                <span class=" text-white">© 2024 Idealcar inc</span>
-            </div>
+      <footer class="footer mt-auto py-5 bg-dark py-0">
+        <div class="px-5">
+            <a class="navbar-brand" href="#"><img src="Assets/Images/logo1.png" alt="inav-logo"></a>
+            <span class="text-secondary">
+                <br>For Online concerns, <br>Contact us at support@inav.ph or (+632) 8667 7777
+            </span>
+            <hr class="border-white">
+            <span class="text-secondary">iNAV PHilippines Corporation © 2019 All rights reserved</span>
         </div>
-        
       </footer>
+
       <script src="javascript.js"></script>
 </body>
 </html>

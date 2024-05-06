@@ -66,6 +66,13 @@
     clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%);
 } */
 
+.bg{
+    /* border-radius: 15px 0 15px 0; */
+    border-radius: 15px;
+
+}
+
+
 /* Carousel Content */
 .carousel-control-prev, .carousel-control-next {
     top: 30cap;
@@ -103,7 +110,7 @@
 
 
 /* Responsive styles area ! */
-@media (max-width: 768px) {
+@media (max-width: 734px) {
 
     /* Nav */
 
@@ -127,9 +134,19 @@
         font-size: 20px; /* Adjust the font size for smaller screens */
     }
 
+    .content{
+        text-align: justify;
+    }
+
     .explore-btn{
         text-align: center;
     }
+
+    .explore-btn {
+        display: block;
+        margin: 0 auto; /* Center the button horizontally */
+        text-align: center; /* Center the text inside the button */
+      }
     }
 
     @media (max-width: 576px) {
@@ -252,7 +269,7 @@
 @media (max-width: 700px){
     .contact-container{
         grid-template-columns: 1fr;
-        gap: 1rem;
+        /* gap: 1rem; */
         /* margin-top: 20rem !important; */
     }
     .map iframe{
