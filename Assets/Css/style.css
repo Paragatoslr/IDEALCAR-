@@ -57,7 +57,7 @@
     position: absolute;
     top: 5%;
     right: -0%;
-    transform: translate(10%, -5%); /*to adjust the position of the truck*/
+    transform: translate(-30rem, 3%); /*to adjust the position of the truck*/
     z-index: 2; /* Ensure the car is on top of the background image */  
     animation: slideLeft 4s infinite;
 }
