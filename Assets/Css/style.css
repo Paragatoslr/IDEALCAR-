@@ -1,4 +1,6 @@
 /* color */
+
+
 :root {
     --bg-color: #010F23;
 }
@@ -69,7 +71,6 @@
 .bg{
     /* border-radius: 15px 0 15px 0; */
     border-radius: 15px;
-
 }
 
 
@@ -198,7 +199,8 @@
 
 .map-container{
     width: 100%;
-    margin-top: -10cap;
+    margin-top: -5.5cap;
+    margin-bottom: 5cap;
     height: 70vh;
     display: flex;
     align-items: center;
