@@ -1,0 +1,280 @@
+/* color */
+
+
+:root {
+    --bg-color: #010F23;
+}
+
+.bg-darkblue {
+    background-color: var(--bg-color);
+}
+
+
+/* Tagline text */
+.text-box {
+    width: 90%;
+    /* color: #ffffff; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box h1{
+    font-size: 100px;
+}
+
+.text-box p{
+    font-size: 30px;
+}
+
+.monitor-text h1{
+    font-size: 70px;
+}
+
+.monitor-text p{
+    font-size: 20px;
+}
+
+.explore-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 70px;
+    padding: 10px 30px; 
+    font-size: 20px;
+    background-color: rgb(28, 19, 68);
+    cursor: pointer;
+}
+
+/*  Monitor all your assets */
+
+.row-monitor{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-position {
+    position: absolute;
+    top: 5%;
+    right: -0%;
+    transform: translate(-30rem, 3%); /*to adjust the position of the truck*/
+    z-index: 2; /* Ensure the car is on top of the background image */  
+    animation: slideLeft 4s infinite;
+}
+
+/* .bg{
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 80%);
+} */
+
+.bg{
+    /* border-radius: 15px 0 15px 0; */
+    border-radius: 15px;
+}
+
+
+/* Carousel Content */
+.carousel-control-prev, .carousel-control-next {
+    top: 30cap;
+    margin-inline: 15%;
+    border-radius: 10px;
+    width: 3%;
+    height: 10%;
+    text-align: center;
+}
+
+.carousel-control-prev, .carousel-control-next :hover {
+    background: rgb(28, 19, 68);
+}
+
+.carousel-control-next, .carousel-control-prev :hover {
+    background: rgb(28, 19, 68);
+}
+
+.card{
+    margin: .5%;
+}
+
+/* This code let the truck slide back and fort */
+@keyframes slideLeft {
+    0% {
+        right: 0%; /* Start from original position */
+    }
+    50% {
+        right: 0%; /* Slide to new position */
+    }
+    100% {
+        right: 0%; /* Back to original position */
+    }
+}
+
+
+/* Responsive styles area ! */
+@media (max-width: 734px) {
+
+    /* Nav */
+
+    .nav-link li{
+        position: absolute;
+        background: #ffffff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+    }
+
+    /* Your Key to a Smoother Operation, Track with Us Now - - - - */
+
+    .text-box h1 {
+        font-size: 60px; /* Adjust the font size for smaller screens */
+    }
+
+    .text-box p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+
+    .content{
+        text-align: justify;
+    }
+
+    .explore-btn{
+        text-align: center;
+    }
+
+    .explore-btn {
+        display: block;
+        margin: 0 auto; /* Center the button horizontally */
+        text-align: center; /* Center the text inside the button */
+      }
+    }
+
+    @media (max-width: 576px) {
+    .text-box h1 {
+        font-size: 40px; /* Adjust the font size for even smaller screens */
+        text-align: center;
+    }
+
+    .text-box p {
+        font-size: 16px; /* Adjust the font size for even smaller screens */
+        text-align: center;
+    }
+
+    .explore-btn{
+        text-align: center;
+    }
+
+
+    /* Monitor all your assets _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+    .monitor-text h1 {
+        font-size: 60px; /* Adjust the font size for smaller screens */
+    }
+
+    .monitor-text p {
+        font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+    }
+
+    @media (max-width: 576px) {
+    .monitor-text h1 {
+        font-size: 40px; /* Adjust the font size for even smaller screens */
+        text-align: center;
+    }
+
+    .monitor-text p {
+        font-size: 16px; /* Adjust the font size for even smaller screens */
+        text-align: justify;
+    }
+
+    @media (max-width: 767px) {
+        .d-none.d-md-block {
+            display: none !important;
+        }
+    }
+}
+
+/* map area */
+
+.map-container{
+    width: 100%;
+    margin-top: -5.5cap;
+    margin-bottom: 5cap;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* background:rgb(28, 19, 68); */
+}
+.contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1.5rem; */
+    box-shadow: 0 0 1rem hsla(0 0 0 /16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.form-container{
+    padding: 20px;
+    background: rgb(28, 19, 68);
+
+}
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-container input,
+.contact-container textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgb(37, 31, 78);
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.4rem;
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background: #00bdbe;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.send-button :hover{
+    background: hsla(181, 100%, 10%, 0.8);
+    transition: 0.3s all linear;
+}
+.contact-container .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 964px){
+    .contact-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media (max-width: 700px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        /* gap: 1rem; */
+        /* margin-top: 20rem !important; */
+    }
+    .map iframe{
+        height: 400px;
+    }
+}
