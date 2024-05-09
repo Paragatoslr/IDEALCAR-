@@ -79,6 +79,25 @@
         margin: 0 auto;
         text-align: center; 
     }  */
+    
+    /* Carousel Content */
+    .carousel-control-prev, .carousel-control-next {
+        top: 30cap;
+        margin-inline: 15%;
+        border-radius: 10px;
+        width: 3%;
+        height: 10%;
+        text-align: center;
+    }
+
+    
+    .carousel-control-prev, .carousel-control-next :hover {
+        background: rgb(28, 19, 68);
+    }
+
+    .carousel-control-next, .carousel-control-prev :hover {
+        background: rgb(28, 19, 68);
+    }
 
     @media (max-width: 734px) {
         .text-box h1 {
