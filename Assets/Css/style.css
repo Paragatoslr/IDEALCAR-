@@ -164,7 +164,7 @@
                 display: none !important;
             }
             .map{
-                margin-top: -15%;
+                margin-top: 0%;
             }
         }
     }
@@ -251,6 +251,48 @@
     .map iframe{
         height: 400px;
     }
+    .contact{
+        margin-bottom: 50px;
+    }
 }
 
+/* Card Container CSS */
+
+   /* Custom styles */
+   .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto; /* Added to enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Added for smooth scrolling on iOS devices */
+    
+}
+
+.card-body{
+    position: absolute;
+    margin-top: 20.5rem;
+}
+
+.card-title{
+    font-size: 33px;
+}
+.baraha{
+    border-radius: 20%;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+    .card-container {
+        flex-wrap: nowrap; /* Prevent wrapping onto multiple lines */
+        justify-content: flex-start; /* Align cards to the start */
+        gap: 10px; /* Reduce gap between cards for better mobile view */
+    }
+    .card {
+        min-width: 70vw; /* Set a minimum width for each card to fit in mobile view */
+    }
+    .card-body{
+        margin-top: 110%; /* Adjust margin for card body in mobile view */
+    }
+}
   
