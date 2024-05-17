@@ -20,11 +20,11 @@
                           <div class="col-md-8">
                               <div class="relative mt-4 mb-3">
                                   <div class="mt-4 mb-3">
-                                      <div class="card rounded-xl overflow-auto p-8">
+                                      <div class="card rounded-xl overflow-auto p-8 ">
                                           <iframe class="py-3 aspect-auto" width="auto" height="550" src="${link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                          <div class="card-body p-2">
-                                              <h1>Video Title</h1>
-                                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis quo, at hic eveniet animi perspiciatis atque voluptates, in molestiae iusto architecto ex excepturi voluptatibus dignissimos necessitatibus fuga enim dolor?</p>
+                                          <div class="card-video p-2">
+                                            <h1>Video Title</h1>
+                                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda veritatis quo, at hic eveniet animi perspiciatis atque voluptates, in molestiae iusto architecto ex excepturi voluptatibus dignissimos necessitatibus fuga enim dolor?</p>
                                           </div>
                                       </div>
                                   </div>

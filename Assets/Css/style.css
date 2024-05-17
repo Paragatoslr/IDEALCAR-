@@ -124,6 +124,11 @@
             margin: 0 auto; /* Center the button horizontally */
             text-align: center; /* Center the text inside the button */
         }
+        .text-box h1{
+            /* font-size: 100px;
+            padding: 0%; */
+            margin-top: 10rem;
+        }
         
     }
     @media (max-width: 576px){
@@ -293,6 +298,9 @@
     }
     .card-body{
         margin-top: 110%; /* Adjust margin for card body in mobile view */
+    }
+    .card-text h1{
+        font-size: 30px;
     }
 }
   
