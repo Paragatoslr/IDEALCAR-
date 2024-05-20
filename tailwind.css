@@ -1,0 +1,323 @@
+/* Nav icon toggler */
+.navbar-toggler {
+    border-color: white; /* Change color to white */   
+    }
+
+    .bar1, .bar2, .bar3 {
+    width: 31px;
+    height: 1.5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+    }
+
+    .text-box {
+        width: 90%;
+        color: #ffffff; 
+        position: absolute; 
+        top: 0rem;
+        right: 10%; 
+        transform: translate(1%, -15rem);
+    }
+
+    .dropdown-menu{
+        color: black;
+    }
+
+    .nav-link{
+        color: white;
+    }
+
+    .bg-transparent{
+        background-color: transparent !important;
+    }
+
+    .text-box {
+        width: 90%;
+        /* color: #ffffff; */
+        /* position: absolute; */
+        /* top: 50%;
+        left: 50%; */
+        transform: translate(1%, -45rem);
+    }
+    .text-box h1{
+        font-size: 100px;
+        padding: 0%;
+    }
+    .text-box p{
+        font-size: 30px;
+    }
+    .monitor-text h1{
+        font-size: 70px;
+    }
+    .monitor-text p{
+        font-size: 20px;
+    }
+    .content{
+        margin-top: -20%;
+    }
+    .monitor-text h1{
+        font-size: 70px;
+    }
+    .monitor-text p{
+        font-size: 20px;
+    }
+    .explore-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        border-radius: 70px;
+        padding: 10px 30px; 
+        font-size: 20px;
+        background-color: rgb(28, 19, 68);
+        cursor: pointer;
+    }
+    .row-monitor{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .car-position {
+        position: absolute;
+        top: 5%;
+        right: -0%;
+        transform: translate(-30rem, 3%); /*to adjust the position of the truck*/
+        z-index: 2; /* Ensure the car is on top of the background image */  
+        animation: slideLeft 4s infinite;
+    }
+    .bg{
+        /* border-radius: 15px 0 15px 0; */
+        border-radius: 10px;
+    }
+   /* .explore-btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center; 
+    }  */
+    
+    /* Carousel Content */
+    .carousel-control-prev, .carousel-control-next {
+        top: 30cap;
+        margin-inline: 15%;
+        border-radius: 10px;
+        width: 3%;
+        height: 10%;
+        text-align: center;
+    }
+
+    
+    .carousel-control-prev, .carousel-control-next :hover {
+        background: rgb(28, 19, 68);
+    }
+
+    .carousel-control-next, .carousel-control-prev :hover {
+        background: rgb(28, 19, 68);
+    }
+
+    @media (max-width: 734px) {
+        .text-box h1 {
+            font-size: 60px; /* Adjust the font size for smaller screens */
+        }
+        .text-box p {
+            font-size: 20px; /* Adjust the font size for smaller screens */
+        }
+        .content{
+            text-align: justify;
+        }
+        .explore-btn{
+            text-align: center;
+        }
+    
+        .explore-btn {
+            display: block;
+            margin: 0 auto; /* Center the button horizontally */
+            text-align: center; /* Center the text inside the button */
+        }
+        .text-box h1{
+            /* font-size: 100px;
+            padding: 0%; */
+            margin-top: 10rem;
+        }
+        
+    }
+    @media (max-width: 576px){
+        .text-box h1 {
+            font-size: 40px; /* Adjust the font size for even smaller screens */
+            text-align: center;
+        }
+        .text-box p {
+            font-size: 16px; /* Adjust the font size for even smaller screens */
+            text-align: center;
+        }
+        .explore-btn{
+            text-align: center;
+        }
+
+        /* Monitor all your assets _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+
+        .monitor-text h1 {
+            font-size: 60px; /* Adjust the font size for smaller screens */
+        }
+
+        .monitor-text p {
+            font-size: 20px; /* Adjust the font size for smaller screens */
+        }
+        }
+
+        @media (max-width: 576px) {
+        .monitor-text h1 {
+            font-size: 40px; /* Adjust the font size for even smaller screens */
+            text-align: center;
+        }
+        .monitor-text p {
+            font-size: 16px; /* Adjust the font size for even smaller screens */
+            text-align: justify;
+        }
+        @media (max-width: 767px) {
+            .d-none.d-md-block {
+                display: none !important;
+            }
+            .map{
+                margin-top: 0%;
+            }
+        }
+    }
+
+/* map area */
+
+.map-container{
+    width: 100%;
+    margin-top: -5.5cap;
+    margin-bottom: 5cap;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* background:rgb(28, 19, 68); */
+}
+.contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1.5rem; */
+    box-shadow: 0 0 1rem hsla(0 0 0 /16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.form-container{
+    padding: 20px;
+    background: rgb(28, 19, 68);
+
+}
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-container input,
+.contact-container textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgb(37, 31, 78);
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: 0.4rem;
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background: #00bdbe;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.send-button :hover{
+    background: hsla(181, 100%, 10%, 0.8);
+    transition: 0.3s all linear;
+}
+.contact-container .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 964px){
+    .contact-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media (max-width: 700px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        /* gap: 1rem; */
+        /* margin-top: 20rem !important; */
+    }
+    .map iframe{
+        height: 200px;
+    }
+    .contact{
+        margin-bottom: 50px;
+    }
+
+    .map-container{
+        padding-top: 15rem;
+    }
+}
+
+/* Card Container CSS */
+
+   /* Custom styles */
+   .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto; /* Added to enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Added for smooth scrolling on iOS devices */
+    
+}
+
+.card-body{
+    /* position: absolute; */
+    /* margin-top: 20.5rem; */
+}
+
+.card-title{
+    font-size: 33px;
+}
+.baraha{
+    border-radius: 20%;
+}
+
+.map-container{
+    margin-top: 5px;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+    .card-container {
+        flex-wrap: nowrap; /* Prevent wrapping onto multiple lines */
+        justify-content: flex-start; /* Align cards to the start */
+        gap: 10px; /* Reduce gap between cards for better mobile view */
+    }
+    .card {
+        min-width: 70vw; /* Set a minimum width for each card to fit in mobile view */
+    }
+    .card-body{
+        margin-top: 110%; /* Adjust margin for card body in mobile view */
+    }
+    .card-text h1{
+        font-size: 30px;
+    }
+}
+  
