@@ -12,9 +12,26 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
+    <script>
+        function openTab(event, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("text-blue-600", "border-b-2", "border-blue-600", "rounded-t-lg", "active", "dark:text-blue-500", "dark:border-blue-500");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("text-blue-600", "border-b-2", "border-blue-600", "rounded-t-lg", "active", "dark:text-blue-500", "dark:border-blue-500");
+        }
 
-    
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("defaultOpen").click();
+        });
+    </script>
+
 </head>
 
 
@@ -331,38 +348,35 @@
             <div class="flex flex-col items-center">
                 <ul class="md:flex md:space-x-6 md:text-sm md:font-medium md:text-gray-500 dark:text-gray-400 mb-8">
                     <li>
-                        <a href="#" data-tab="profile" class="tab-link block px-4 py-3 rounded-lg active-tab" aria-current="page">
+                        <a href="javascript:void(0)" id="defaultOpen" class="tablinks inline-block p-4 border-b-2 border-transparent rounded-t-lg active-tab" onclick="openTab(event, 'profile')">
                             TALK TO SALES
                         </a>
                     </li>
                     <li>
-                        <a href="#" data-tab="dashboard" class="tab-link block px-4 py-3 rounded-lg inactive-tab">
+                        <a href="javascript:void(0)" class="tablinks inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" onclick="openTab(event, 'dashboard')">
                             PARTNER WITH US
                         </a>
                     </li>
                     <li>
-                        <a href="#" data-tab="settings" class="tab-link block px-4 py-3 rounded-lg inactive-tab">
+                        <a href="javascript:void(0)" class="tablinks inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" onclick="openTab(event, 'settings')">
                             SUPPORT
                         </a>
                     </li>
                 </ul>
-                
-                <div class="w-full max-w-6xl"> <!--Remove the tags inside class and it the canvas will expand more-->
-                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg " id="profile">
+    
+                <div class="w-full max-w-6xl">
+                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg" id="profile">
                         <div class="flex flex-col md:flex-row justify-between items-center">
                             <div class="w-full md:w-1/2 px-4 md:px-12">
                                 <div class="p-5">
-
                                     <h1 class="tab-text-1 font-bold text-6xl">Get Started with INAV</h1>
                                     <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit provident vitae expedita quas! Eveniet animi vitae placeat facere necessitatibus inventore voluptatum asperiores illum deleniti, aperiam, veniam culpa id dolorum.</p>
-
-                                    <div class="flex items-center"> <!-- it align the icon and text at the same line-->
+                                    <div class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                         </svg> 
                                         <a href="#" class="text-gray-600 transition-colors duration-300 hover:underline hover:text-blue-500 dark:hover:text-blue-400 px-2 font-bold"> Email us: email.com</a>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2">
@@ -370,22 +384,19 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg " id="dashboard">
+    
+                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg" id="dashboard">
                         <div class="flex flex-col md:flex-row justify-between items-center">
                             <div class="w-full md:w-1/2 px-4 md:px-12">
                                 <div class="p-5">
-
-                                    <h1 class="tab-text-1 font-bold text-6xl">dashboard</h1>
+                                    <h1 class="tab-text-1 font-bold text-6xl">Partner with Us</h1>
                                     <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit provident vitae expedita quas! Eveniet animi vitae placeat facere necessitatibus inventore voluptatum asperiores illum deleniti, aperiam, veniam culpa id dolorum.</p>
-
-                                    <div class="flex items-center"> <!-- it align the icon and text at the same line-->
+                                    <div class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                         </svg> 
                                         <a href="#" class="text-gray-600 transition-colors duration-300 hover:underline hover:text-blue-500 dark:hover:text-blue-400 px-2 font-bold"> Email us: email.com</a>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2">
@@ -393,22 +404,19 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg " id="settings">
+    
+                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg" id="settings">
                         <div class="flex flex-col md:flex-row justify-between items-center">
                             <div class="w-full md:w-1/2 px-4 md:px-12">
                                 <div class="p-5">
-
-                                    <h1 class="tab-text-1 font-bold text-6xl">Settings</h1>
+                                    <h1 class="tab-text-1 font-bold text-6xl">Support</h1>
                                     <p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit provident vitae expedita quas! Eveniet animi vitae placeat facere necessitatibus inventore voluptatum asperiores illum deleniti, aperiam, veniam culpa id dolorum.</p>
-
-                                    <div class="flex items-center"> <!-- it align the icon and text at the same line-->
+                                    <div class="flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                         </svg> 
                                         <a href="#" class="text-gray-600 transition-colors duration-300 hover:underline hover:text-blue-500 dark:hover:text-blue-400 px-2 font-bold"> Email us: email.com</a>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2">
