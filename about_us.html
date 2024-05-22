@@ -13,7 +13,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     
+
+    
 </head>
+
 
 <style>
     .header
@@ -203,7 +206,7 @@
 
                                         <div>
                                             <!-- <p class="uppercase tracking-wider text-gray-500 font-bold text-[13px] ">Lorem</p> -->
-                                            <ul class="mt-3 text-[15px]">
+                                            <ul class="mt-3 text-[15px] active">
                                                 <li>
                                                     <a href="about_us.html" class="block p-2 -mx-2 rounded-lg hover:bg-gray-100 transition ease-in-out duration-300 text-gray-800 font-semibold hover:text-indigo-600">
                                                         About Us
@@ -344,8 +347,8 @@
                     </li>
                 </ul>
                 
-                <div class="w-full max-w-6xl">
-                    <div class="tab-content p-6 bg-gray-50 text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg " id="profile">
+                <div class="w-full max-w-6xl"> <!--Remove the tags inside class and it the canvas will expand more-->
+                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg " id="profile">
                         <div class="flex flex-col md:flex-row justify-between items-center">
                             <div class="w-full md:w-1/2 px-4 md:px-12">
                                 <div class="p-5">
@@ -363,12 +366,12 @@
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2">
-                                <img src="images/fast road bg.png" alt="fast_background" class="tab-pic-1 w-full">
+                                <img src="images/iot.png" alt="fast_background" class="tab-pic-1 w-full">
                             </div>
                         </div>
                     </div>
 
-                    <div class="tab-content p-6 bg-gray-50 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg " id="dashboard">
+                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg " id="dashboard">
                         <div class="flex flex-col md:flex-row justify-between items-center">
                             <div class="w-full md:w-1/2 px-4 md:px-12">
                                 <div class="p-5">
@@ -386,12 +389,12 @@
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2">
-                                <img src="images/fast road bg.png" alt="fast_background" class="tab-pic-1 w-full">
+                                <img src="images/no_image.jpg" alt="fast_background" class="tab-pic-1 w-full">
                             </div>
                         </div>
                     </div>
 
-                    <div class="tab-content p-6 bg-gray-50 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg " id="settings">
+                    <div class="tab-content p-6 text-gray-500 dark:text-gray-400 dark:bg-gray-800 hidden rounded-lg " id="settings">
                         <div class="flex flex-col md:flex-row justify-between items-center">
                             <div class="w-full md:w-1/2 px-4 md:px-12">
                                 <div class="p-5">
@@ -409,12 +412,114 @@
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2">
-                                <img src="images/fast road bg.png" alt="fast_background" class="tab-pic-1 w-full">
+                                <img src="images/no_image.jpg" alt="fast_background" class="tab-pic-1 w-full">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Get in touch -->
+    <section class="get-in-touch bg-dark">
+        <style>
+            .get-in-touch {
+                background-color: #010F23; /* Assuming the image background is green */
+            }
+            .row-monitor {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 100%;
+            }
+            .col-md-6 {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                padding: 2rem;
+            }
+            .text-white {
+                color: #fff; /* Adjust this if you need the text color different */
+            }
+            .image-container {
+                flex: 1;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                display: none; /* Hide by default for smaller screens */
+            }
+            img {
+                border-radius: 0; /* Ensure the image has no border radius */
+            }
+            @media (min-width: 768px) {
+                .image-container {
+                    display: block; /* Show for medium and larger screens */
+                }
+            }
+            .map iframe {
+                width: 100%; /* Make the map responsive */
+                height: 450px;
+                border: 0;
+            }
+        </style>
+    
+        <div class="container mx-auto px-4 md:px-0 items-center">
+            <div class="row-monitor">
+                <div class="col-md-6 text-white">
+                    <div class="course-col px-4 md:px-12">
+                        <div class="monitor-text p-5 px-4 md:px-12">
+                            <h1 class="tab-text-1 enhance-text font-bold">Manage your drivers and their potentials</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit provident vitae expedita quas! Eveniet animi vitae placeat facere necessitatibus inventore voluptatum asperiores illum deleniti, aperiam, veniam culpa id dolorum.</p>
+                            <a href="#" class="explore-btn mt-3">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="image-container" style="background-image: url('Assets/Images/inav-top-view.png');"></div> -->
+                <img src="Assets/Images/inav-top-view.png" alt="" srcset="">
+            </div>
+            <div class="map ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.712953250725!2d121.0345954751065!3d14.615420985872738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7b2c8d29705%3A0x4d8d7a0b89db90ad!2siNav%20Philippines%20Corporation!5e0!3m2!1sen!2sph!4v1714721296987!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <div class="monitor-text flex justify-center items-center">
+                <h1 class="font-bold">Send a Message</h1>
+            </div>
+            <form action="send_email.php" method="POST" class="space-y-8 mt-12">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
+                    <input type="text" id="name" name="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
+                    <input type="text" id="name" name="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" name="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" name="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                    <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..." required></textarea>
+                </div>
+                <div class="flex">
+                    <button type="submit" class="btn-submit px-5 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                </div>
+            </form>
+
+            <style>
+                .btn-submit{
+                    background-color: #0D99FF;
+                }
+            </style>
         </div>
     </section>
 
@@ -523,4 +628,6 @@
             });
         });
     </script>
+
+    
 </html>
